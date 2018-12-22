@@ -15,6 +15,8 @@
 		F1CF2EF121CE1AB0005D598F /* windows_shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF2EF021CE1AB0005D598F /* windows_shopperTests.swift */; };
 		F1CF2EFC21CE1AB0005D598F /* windows_shopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF2EFB21CE1AB0005D598F /* windows_shopperUITests.swift */; };
 		F1CF2F0F21CE1E5A005D598F /* CurrencyTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF2F0E21CE1E5A005D598F /* CurrencyTextFeild.swift */; };
+		F1F8D0F721CE3000001AC20B /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F8D0F621CE3000001AC20B /* Wage.swift */; };
+		F1F8D0F821CE9118001AC20B /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F8D0F621CE3000001AC20B /* Wage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		F1CF2EFB21CE1AB0005D598F /* windows_shopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windows_shopperUITests.swift; sourceTree = "<group>"; };
 		F1CF2EFD21CE1AB0005D598F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1CF2F0E21CE1E5A005D598F /* CurrencyTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextFeild.swift; sourceTree = "<group>"; };
+		F1F8D0F621CE3000001AC20B /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 		F1CF2EDA21CE1AAD005D598F /* windows-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				F1F8D0F521CE2FE3001AC20B /* Model */,
 				F1CF2F0D21CE1E11005D598F /* Views */,
 				F1CF2F0C21CE1CAD005D598F /* Controller */,
 				F1CF2EDB21CE1AAD005D598F /* AppDelegate.swift */,
@@ -142,6 +146,14 @@
 				F1CF2F0E21CE1E5A005D598F /* CurrencyTextFeild.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F1F8D0F521CE2FE3001AC20B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1F8D0F621CE3000001AC20B /* Wage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1CF2EDE21CE1AAD005D598F /* MainVC.swift in Sources */,
+				F1F8D0F721CE3000001AC20B /* Wage.swift in Sources */,
 				F1CF2F0F21CE1E5A005D598F /* CurrencyTextFeild.swift in Sources */,
 				F1CF2EDC21CE1AAD005D598F /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1CF2EF121CE1AB0005D598F /* windows_shopperTests.swift in Sources */,
+				F1F8D0F821CE9118001AC20B /* Wage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +504,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KR3776A53;
 				INFOPLIST_FILE = "windows-shopperTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -510,6 +525,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KR3776A53;
 				INFOPLIST_FILE = "windows-shopperTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -529,6 +545,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KR3776A53;
 				INFOPLIST_FILE = "windows-shopperUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -548,6 +565,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KR3776A53;
 				INFOPLIST_FILE = "windows-shopperUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
