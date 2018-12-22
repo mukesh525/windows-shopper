@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		F1CF2EDC21CE1AAD005D598F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF2EDB21CE1AAD005D598F /* AppDelegate.swift */; };
-		F1CF2EDE21CE1AAD005D598F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF2EDD21CE1AAD005D598F /* ViewController.swift */; };
+		F1CF2EDE21CE1AAD005D598F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF2EDD21CE1AAD005D598F /* MainVC.swift */; };
 		F1CF2EE121CE1AAD005D598F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CF2EDF21CE1AAD005D598F /* Main.storyboard */; };
 		F1CF2EE321CE1AB0005D598F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CF2EE221CE1AB0005D598F /* Assets.xcassets */; };
 		F1CF2EE621CE1AB0005D598F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CF2EE421CE1AB0005D598F /* LaunchScreen.storyboard */; };
 		F1CF2EF121CE1AB0005D598F /* windows_shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF2EF021CE1AB0005D598F /* windows_shopperTests.swift */; };
 		F1CF2EFC21CE1AB0005D598F /* windows_shopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF2EFB21CE1AB0005D598F /* windows_shopperUITests.swift */; };
+		F1CF2F0F21CE1E5A005D598F /* CurrencyTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF2F0E21CE1E5A005D598F /* CurrencyTextFeild.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		F1CF2ED821CE1AAD005D598F /* windows-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "windows-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CF2EDB21CE1AAD005D598F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1CF2EDD21CE1AAD005D598F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1CF2EDD21CE1AAD005D598F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		F1CF2EE021CE1AAD005D598F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1CF2EE221CE1AB0005D598F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1CF2EE521CE1AB0005D598F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		F1CF2EF721CE1AB0005D598F /* windows-shopperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "windows-shopperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CF2EFB21CE1AB0005D598F /* windows_shopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windows_shopperUITests.swift; sourceTree = "<group>"; };
 		F1CF2EFD21CE1AB0005D598F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1CF2F0E21CE1E5A005D598F /* CurrencyTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextFeild.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,9 @@
 		F1CF2EDA21CE1AAD005D598F /* windows-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				F1CF2F0D21CE1E11005D598F /* Views */,
+				F1CF2F0C21CE1CAD005D598F /* Controller */,
 				F1CF2EDB21CE1AAD005D598F /* AppDelegate.swift */,
-				F1CF2EDD21CE1AAD005D598F /* ViewController.swift */,
 				F1CF2EDF21CE1AAD005D598F /* Main.storyboard */,
 				F1CF2EE221CE1AB0005D598F /* Assets.xcassets */,
 				F1CF2EE421CE1AB0005D598F /* LaunchScreen.storyboard */,
@@ -123,6 +126,22 @@
 				F1CF2EFD21CE1AB0005D598F /* Info.plist */,
 			);
 			path = "windows-shopperUITests";
+			sourceTree = "<group>";
+		};
+		F1CF2F0C21CE1CAD005D598F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1CF2EDD21CE1AAD005D598F /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F1CF2F0D21CE1E11005D598F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1CF2F0E21CE1E5A005D598F /* CurrencyTextFeild.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1CF2EDE21CE1AAD005D598F /* ViewController.swift in Sources */,
+				F1CF2EDE21CE1AAD005D598F /* MainVC.swift in Sources */,
+				F1CF2F0F21CE1E5A005D598F /* CurrencyTextFeild.swift in Sources */,
 				F1CF2EDC21CE1AAD005D598F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
